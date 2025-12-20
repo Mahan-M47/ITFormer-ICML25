@@ -13,9 +13,6 @@ import numpy as np
 import torch
 from transformers import AutoTokenizer, AutoProcessor
 from dataset.dataset import TsQaDataset, DataCollator
-
-from dataset.dataset_custom import CustomTsQaDataset
-
 from models.TimeLanguageModel import TLM
 from datetime import datetime
 from tqdm import tqdm
@@ -89,8 +86,6 @@ def main_inference(args):
         # Default to 7B if size cannot be determined
         llm_model_path = 'LLM/Qwen2.5-7B-Instruct'
     
-    args.__dict__.update({'llm_model_path': llm_model_path})
-    
     if accelerator.is_main_process:
         print(f"🔗 Using LLM model: {llm_model_path}")
     
@@ -104,7 +99,6 @@ def main_inference(args):
     # Load model - let from_pretrained handle configuration loading
     from models.TimeLanguageModel import TLM
     model = TLM.from_pretrained(args.model_checkpoint, config=tlm_config)
-    
     # Print model parameter statistics only in the main process
     if accelerator.is_main_process:
         param_counts = count_model_parameters(model)
@@ -113,14 +107,12 @@ def main_inference(args):
         print(f"   ITFormer:    {param_counts['itformer']:.2f}M")
         print(f"   TS_Encoder:  {param_counts['ts_encoder']:.2f}M")
         print(f"   Total:       {param_counts['total']:.2f}M")
-        
     # Prepare model with accelerator
     model = accelerator.prepare(model)
     model.eval()
     if accelerator.is_main_process:
         print(f"✅ Model loaded successfully!")
         print("\n📊 Preparing test dataset...")
-        
     # Load tokenizer
     if os.path.exists(os.path.join(args.model_checkpoint, "tokenizer.json")):
         if accelerator.is_main_process:
@@ -130,7 +122,6 @@ def main_inference(args):
         if accelerator.is_main_process:
             print("Loading tokenizer from original model")
         tokenizer = model.tokenizer
-        
     # Add special token if not present
     if '<|image_pad|>' not in tokenizer.get_vocab():
         if accelerator.is_main_process:
@@ -138,23 +129,19 @@ def main_inference(args):
         tokenizer.add_tokens(['<|image_pad|>'])
         model.llm_model.resize_token_embeddings(len(tokenizer))
     tokenizer.padding_side = 'left'
-    
-    # # Simple config for dataset
-    # class SimpleConfig:
-    #     def __init__(self, **kwargs):
-    #         for key, value in kwargs.items():
-    #             setattr(self, key, value)
-    # tlmconfig = SimpleConfig(ts_pad_num=args.prefix_num)
-    # test_dataset = TsQaDataset(
-    #     args.ts_path_test,
-    #     args.qa_path_test,
-    #     tokenizer,
-    #     tokenizer,  # Use tokenizer as processor
-    #     tlmconfig
-    # )
-    
-    test_dataset = CustomTsQaDataset(args.sample_data)
-    
+    # Simple config for dataset
+    class SimpleConfig:
+        def __init__(self, **kwargs):
+            for key, value in kwargs.items():
+                setattr(self, key, value)
+    tlmconfig = SimpleConfig(ts_pad_num=args.prefix_num)
+    test_dataset = TsQaDataset(
+        args.ts_path_test,
+        args.qa_path_test,
+        tokenizer,
+        tokenizer,  # Use tokenizer as processor
+        tlmconfig
+    )
     data_collator = DataCollator(tokenizer=tokenizer)
     test_loader = DataLoader(
         test_dataset,
@@ -162,7 +149,6 @@ def main_inference(args):
         collate_fn=data_collator,
         num_workers=args.num_workers
     )
-    
     # Prepare dataloader with accelerator
     test_loader = accelerator.prepare(test_loader)
     if accelerator.is_main_process:
@@ -170,7 +156,6 @@ def main_inference(args):
         print(f"🔢 Batch size: {args.batch_size}, Total batches: {len(test_loader)}")
         print("\n🔍 Starting test set inference...")
     results = []
-    
     with torch.no_grad():
         # Show progress bar only in the main process
         if accelerator.is_main_process:
@@ -223,10 +208,6 @@ def main_inference(args):
                     "label": batch_labels[i],
                     "is_correct": prediction.strip() == batch_labels[i].strip()
                 })
-            
-            # with open("output.json", "w") as f:
-            #     json.dump(results, f, indent=2, ensure_ascii=False)
-                    
     if accelerator.is_main_process:
         print("\n📊 Calculating evaluation metrics...")
     metrics = compute_metrics_from_results(results,args)

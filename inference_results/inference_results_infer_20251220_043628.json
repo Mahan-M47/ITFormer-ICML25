@@ -1,0 +1,818 @@
+[
+    {
+        "index": 4,
+        "stage": 3,
+        "input": "system\nYou are a helpful assistant.\nuser\nGiven the time series signal , by perceiving the engine signal across 10 cycles to reflect different health states and performing temporal inference to predict the health decline trend, what is the qualitative condition of the engine? a:  Good Condition\n b: Moderate Condition\n c: Poor Condition\n d: Bad Condition\n e: Extremely Poor Condition\n\nassistant\n",
+        "prediction": "b",
+        "label": "c",
+        "is_correct": false
+    },
+    {
+        "index": 4,
+        "stage": 3,
+        "input": "system\nYou are a helpful assistant.\nuser\nGiven the time series signal , by perceiving the engine signal across 10 cycles to reflect different health states and performing temporal inference to predict the health decline trend, what is the probability range of engine failure? a: 1%-10%\n b: 10%-30%\n c: 30%-50%\n d: 50%-70%\n e: 70%-100%\n\nassistant\n",
+        "prediction": "b",
+        "label": "c",
+        "is_correct": false
+    },
+    {
+        "index": 1,
+        "stage": 2,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat is the health status of LPC of the given engine signal in one cycle?\n  a: Health\n b: Fault\n\nassistant\n",
+        "prediction": "a",
+        "label": "a",
+        "is_correct": true
+    },
+    {
+        "index": 2,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nIn the context of the provided engine signal over a single cycle, what does the variation in Total Temperature at the High-Pressure Turbine (HPT) outlet signify?\n \nassistant\n",
+        "prediction": "The HPT outlet temperature is maintained at a constant level. This stability indicates that the compressor is performing consistently without any significant temperature fluctuations, reflecting a reliable and efficient operation of the engine.",
+        "label": "The Total Temperature at the HPT outlet remains constant throughout the cycle. This stability indicates that the turbine is performing consistently without any significant temperature fluctuations, reflecting reliable and efficient operation.",
+        "is_correct": false
+    },
+    {
+        "index": 0,
+        "stage": 3,
+        "input": "system\nYou are a helpful assistant.\nuser\nGiven the time series signal , by perceiving the engine signal across 10 cycles to reflect different health states and performing temporal inference to predict the health decline trend, what is the qualitative condition of the engine? a:  Good Condition\n b: Moderate Condition\n c: Poor Condition\n d: Bad Condition\n e: Extremely Poor Condition\n\nassistant\n",
+        "prediction": "b",
+        "label": "d",
+        "is_correct": false
+    },
+    {
+        "index": 4,
+        "stage": 4,
+        "input": "system\nYou are a helpful assistant.\nuser\nIn light of the engine signal data collected across 10 cycles, what specific actions should be undertaken to address the observed issues?\n \nassistant\n",
+        "prediction": "It is essential to conduct a thorough assessment of the engine's performance and ensure that any necessary repairs are promptly performed to maintain optimal conditions and prevent potential issues.",
+        "label": "It is imperative to perform necessary repairs or replace any affected components at the earliest opportunity to ensure the continued safe and efficient operation of the engine.",
+        "is_correct": false
+    },
+    {
+        "index": 2,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nHey, what does the change in the Total temperature at the LPT outlet tell us about the engine signal we’re analyzing in this one cycle?\n \nassistant\n",
+        "prediction": "Well, the LPT outlet temperature stays steady throughout the cycle. This suggests that the engine is performing consistently without any temperature fluctuations, which is a good sign of stable operation.",
+        "label": "Well, the LPT outlet temperature stays steady. This tells us that the compressor is performing consistently without any noticeable temperature ups and downs.",
+        "is_correct": false
+    },
+    {
+        "index": 1,
+        "stage": 2,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat is the health status of HPC of the given engine signal in one cycle?\n  a: Health\n b: Fault\n\nassistant\n",
+        "prediction": "a",
+        "label": "a",
+        "is_correct": true
+    },
+    {
+        "index": 0,
+        "stage": 3,
+        "input": "system\nYou are a helpful assistant.\nuser\nGiven the time series signal , by perceiving the engine signal across 10 cycles to reflect different health states and performing temporal inference to predict the health decline trend, what is the probability range of engine failure? a: 1%-10%\n b: 10%-30%\n c: 30%-50%\n d: 50%-70%\n e: 70%-100%\n\nassistant\n",
+        "prediction": "b",
+        "label": "d",
+        "is_correct": false
+    },
+    {
+        "index": 5,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nMay I inquire as to the precise interpretation of the fluctuation in altitude with regard to the engine signal that has been presented within the confines of a singular cycle?\n \nassistant\n",
+        "prediction": "The altitude appears to be rising steadily. This indicates a gradual increase in engine thrust, which is crucial for maintaining optimal performance and ensuring stable operation.",
+        "label": "The altitude is observed to be dropping rapidly. A swift descent reduces the overall workload on the engine; however, it may necessitate rapid adjustments to maintain operational stability and efficiency. Such adjustments could potentially lead to increased wear on engine components over time.",
+        "is_correct": false
+    },
+    {
+        "index": 1,
+        "stage": 2,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat is the health status of HPT of the given engine signal in one cycle?\n  a: Health\n b: Fault\n\nassistant\n",
+        "prediction": "a",
+        "label": "b",
+        "is_correct": false
+    },
+    {
+        "index": 2,
+        "stage": 2,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat is the health status of fan of the given engine signal in one cycle?\n  a: Health\n b: Fault\n\nassistant\n",
+        "prediction": "a",
+        "label": "a",
+        "is_correct": true
+    },
+    {
+        "index": 5,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nIn the context of the provided engine signal, what is the precise interpretation and operational significance of the observed change in the throttle resolver angle over the course of a single cycle?\n \nassistant\n",
+        "prediction": "Throttle resolver angle exhibits a gradual decrease. This trend indicates a gradual reduction in engine power output, which is consistent with the objective of maintaining stable engine performance and avoiding unnecessary adjustments.",
+        "label": "The throttle resolver angle exhibits a gradual decrease. This indicates a progressive reduction in engine power, which facilitates smoother engine operation and contributes to the efficient conservation of fuel resources.",
+        "is_correct": false
+    },
+    {
+        "index": 0,
+        "stage": 4,
+        "input": "system\nYou are a helpful assistant.\nuser\nIn light of the engine signal data collected over a span of 10 operational cycles, what specific actions should be undertaken to address any potential issues and ensure the system's reliability?\n \nassistant\n",
+        "prediction": "It is imperative to conduct a thorough assessment of the system's operational status and prioritize any necessary repairs or replacements to maintain optimal performance and prevent potential failures.",
+        "label": "It is critical to promptly repair or replace any faulty components and conduct a comprehensive assessment of the engine's overall health status to mitigate risks and maintain optimal performance.",
+        "is_correct": false
+    },
+    {
+        "index": 2,
+        "stage": 2,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat is the health status of LPC of the given engine signal in one cycle?\n  a: Health\n b: Fault\n\nassistant\n",
+        "prediction": "a",
+        "label": "a",
+        "is_correct": true
+    },
+    {
+        "index": 1,
+        "stage": 2,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat is the health status of LPT of the given engine signal in one cycle?\n  a: Health\n b: Fault\n\nassistant\n",
+        "prediction": "a",
+        "label": "a",
+        "is_correct": true
+    },
+    {
+        "index": 5,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nIn the context of the provided engine signal during one operational cycle, what does the variation in the total temperature at the fan inlet signify?\n \nassistant\n",
+        "prediction": "The total temperature at the fan inlet exhibits a steady decline. This trend indicates that the engine is experiencing gradual cooling, which is consistent with the engine operating under controlled conditions and without significant fluctuations in airflow or engine performance.",
+        "label": "The fan inlet temperature remains constant throughout the cycle. This stability indicates that the engine is operating under consistent thermal conditions without any significant temperature fluctuations, ensuring reliable and predictable performance.",
+        "is_correct": false
+    },
+    {
+        "index": 1,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nMay I inquire as to the significance of the observed altitude variation within the context of the provided engine signal over a single cycle?\n \nassistant\n",
+        "prediction": "The altitude exhibits a gradual decrease. This trend signifies a gradual reduction in the engine's power output, which may indicate a controlled and balanced reduction in thrust.",
+        "label": "The altitude is observed to be rising steadily. The engine adjusts accordingly to meet the heightened airflow demand, ensuring that efficient performance is maintained. However, it should be noted that a continuous climb may have implications for fuel efficiency over time.",
+        "is_correct": false
+    },
+    {
+        "index": 2,
+        "stage": 2,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat is the health status of HPC of the given engine signal in one cycle?\n  a: Health\n b: Fault\n\nassistant\n",
+        "prediction": "a",
+        "label": "a",
+        "is_correct": true
+    },
+    {
+        "index": 1,
+        "stage": 2,
+        "input": "system\nYou are a helpful assistant.\nuser\nWas the timing issue in the operation of the given engine signal in one cycle caused by efficiency or flow problems?\n  a: HPT efficiency modifier\n b: LPT efficiency modifier\n c: Fan efficiency modifier\n d: HPT flow modifier\n e: LPT flow modifier\n f: Fan flow modifier\n\nassistant\n",
+        "prediction": "",
+        "label": "a",
+        "is_correct": false
+    },
+    {
+        "index": 5,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nIn the context of the provided engine signal, what is the precise interpretation and operational significance of the observed change in total pressure at the fan inlet over the course of a single cycle?\n \nassistant\n",
+        "prediction": "The total pressure at the fan inlet exhibits a gradual decrease. This trend indicates a gradual reduction in the engine's operational workload, which is consistent with the objective of maintaining stable performance and avoiding any undue pressure fluctuations.",
+        "label": "The total pressure at the fan inlet exhibits a gradual increase. This trend indicates the implementation of incremental power adjustments, which contribute to maintaining stable engine operation and achieving optimal fuel efficiency.",
+        "is_correct": false
+    },
+    {
+        "index": 1,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nIn the context of the provided engine signal, what is the precise interpretation and operational significance of the observed change in the Throttle Resolver Angle throughout a single cycle?\n \nassistant\n",
+        "prediction": "The Throttle Resolver Angle exhibits a gradual increase. This trend signifies a gradual adjustment in engine power output, which contributes to maintaining stable engine performance and ensuring efficient fuel usage throughout the cycle.",
+        "label": "The Throttle Resolver Angle exhibits a steady and controlled decrease. This trend signifies a deliberate reduction in engine power, which is essential for maintaining an optimal balance between thrust generation and fuel efficiency during the operational cycle.",
+        "is_correct": false
+    },
+    {
+        "index": 2,
+        "stage": 2,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat is the health status of HPT of the given engine signal in one cycle?\n  a: Health\n b: Fault\n\nassistant\n",
+        "prediction": "a",
+        "label": "b",
+        "is_correct": false
+    },
+    {
+        "index": 1,
+        "stage": 2,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat is the potential health state of the given engine signal in one cycle?\n  a: Operating Normally\n b: Abnormal Degradation\n c: Imminent Failure\n\nassistant\n",
+        "prediction": "a",
+        "label": "c",
+        "is_correct": false
+    },
+    {
+        "index": 5,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nIn the context of the engine signal provided, what is the precise interpretation and operational significance of the observed change in total temperature at the Low-Pressure Compressor (LPC) outlet over the course of a single cycle?\n \nassistant\n",
+        "prediction": "The LPC outlet temperature exhibits a gradual decline. This trend indicates a gradual reduction in engine power output, which is consistent with the engine's ability to maintain stable performance under various operational conditions.",
+        "label": "The temperature at the LPC outlet exhibits a gradual rise. This trend indicates incremental adjustments in the compressor's workload, which contributes to maintaining stable and efficient engine operation.",
+        "is_correct": false
+    },
+    {
+        "index": 1,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat is the significance of the variation in the total temperature at the fan inlet as observed in the provided engine signal over the course of a single cycle?\n \nassistant\n",
+        "prediction": "The fan inlet temperature exhibits a gradual decline. This indicates a gradual reduction in engine power or efficiency, which could be a sign of scheduled maintenance or improved airflow.",
+        "label": "The fan inlet temperature remains consistent. This stability signifies that the engine is operating smoothly without any notable temperature fluctuations.",
+        "is_correct": false
+    },
+    {
+        "index": 2,
+        "stage": 2,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat is the health status of LPT of the given engine signal in one cycle?\n  a: Health\n b: Fault\n\nassistant\n",
+        "prediction": "a",
+        "label": "b",
+        "is_correct": false
+    },
+    {
+        "index": 2,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nMay I inquire as to the precise interpretation of the fluctuation in altitude with regard to the engine signal that has been presented within the confines of a singular cycle?\n \nassistant\n",
+        "prediction": "The altitude exhibits a gradual increase, indicating a gradual adjustment in engine performance. However, this fluctuation must be carefully monitored to ensure optimal fuel efficiency and avoid potential engine damage.",
+        "label": "The altitude remains unchanged. A stable altitude guarantees consistent engine operation, rendering adjustments unnecessary.",
+        "is_correct": false
+    },
+    {
+        "index": 5,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nHey, can you explain what the change in the Total temperature at the HPC outlet means for this engine signal we're analyzing over one cycle?\n \nassistant\n",
+        "prediction": "The HPC outlet temperature stays steady throughout the cycle. This indicates that the compressor is performing consistently without any temperature fluctuations, which is a good sign of stable operation.",
+        "label": "So, the HPC outlet temperature is increasing slowly. This shows that the engine is making gradual adjustments to its power output, which helps maintain stable operation and ensures the engine is using fuel as efficiently as possible.",
+        "is_correct": false
+    },
+    {
+        "index": 1,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nIn the context of the provided engine signal over a single cycle, what does the variation in total pressure at the fan inlet signify?\n \nassistant\n",
+        "prediction": "The total pressure at the fan inlet remains constant throughout the cycle. This stability indicates that the engine is operating under consistent conditions, with no significant pressure fluctuations, thereby maintaining optimal performance and efficiency.",
+        "label": "The total pressure at the fan inlet remains consistent throughout the cycle. This stability indicates that the airflow is steady, and the engine is performing reliably without any significant pressure fluctuations.",
+        "is_correct": false
+    },
+    {
+        "index": 5,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat does the change in Total temperature at HPT outlet represent of the given engine signal in one cycle?\n \nassistant\n",
+        "prediction": "The HPT outlet temperature appears to be dropping slowly. This could suggest minor adjustments in the compressor performance, which may contribute to maintaining stable engine operation.",
+        "label": "The HPT outlet temperature appears to be rising slowly. This might reflect gradual adjustments in engine power, potentially promoting stable operation and optimal fuel usage.",
+        "is_correct": false
+    },
+    {
+        "index": 2,
+        "stage": 2,
+        "input": "system\nYou are a helpful assistant.\nuser\nWas the timing issue in the operation of the given engine signal in one cycle caused by efficiency or flow problems?\n  a: HPT efficiency modifier\n b: LPT efficiency modifier\n c: Fan efficiency modifier\n d: HPT flow modifier\n e: LPT flow modifier\n f: Fan flow modifier\n\nassistant\n",
+        "prediction": "",
+        "label": "a, b, e",
+        "is_correct": false
+    },
+    {
+        "index": 5,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nIn the context of the provided engine signal, what does the observed change in Total Temperature at the Low-Pressure Turbine (LPT) outlet signify over the course of a single operational cycle?\n \nassistant\n",
+        "prediction": "The LPT outlet temperature exhibits a gradual decline. This trend indicates a potential reduction in the engine's operational efficiency, as the temperature is dropping below the normal operating range.",
+        "label": "The LPT outlet temperature exhibits a slow and gradual rise. This trend reflects the engine's incremental adjustments in power output, which contribute to maintaining stable operation and ensuring optimal fuel efficiency throughout the cycle.",
+        "is_correct": false
+    },
+    {
+        "index": 2,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nWith respect to the provided engine signal within a single cycle, what does the observed fluctuation in the throttle resolver angle signify?\n \nassistant\n",
+        "prediction": "The throttle resolver angle exhibits a gradual decrease. This trend indicates a reduction in engine power output, which is consistent with the engine's ability to maintain stable performance and optimize fuel efficiency.",
+        "label": "The throttle resolver angle exhibits a gradual decrease, indicating a systematic reduction in engine power. This gradual adjustment facilitates smooth engine performance and contributes to efficient fuel conservation.",
+        "is_correct": false
+    },
+    {
+        "index": 1,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nHey, could you explain what the change in Total temperature at the LPC outlet means for this engine signal during one cycle?\n \nassistant\n",
+        "prediction": "The LPC outlet temperature stays the same throughout the cycle. This indicates that the compressor is performing consistently without any temperature fluctuations, which is a good sign of stable operation.",
+        "label": "Well, the LPC outlet temperature is dropping slowly. This indicates there might be gradual reductions in the compressor's workload or some minor cooling enhancements happening. Either way, it points to the engine maintaining stable performance, which is a good thing!",
+        "is_correct": false
+    },
+    {
+        "index": 2,
+        "stage": 2,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat is the potential health state of the given engine signal in one cycle?\n  a: Operating Normally\n b: Abnormal Degradation\n c: Imminent Failure\n\nassistant\n",
+        "prediction": "c",
+        "label": "c",
+        "is_correct": true
+    },
+    {
+        "index": 5,
+        "stage": 2,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat is the health status of fan of the given engine signal in one cycle?\n  a: Health\n b: Fault\n\nassistant\n",
+        "prediction": "a",
+        "label": "a",
+        "is_correct": true
+    },
+    {
+        "index": 2,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat does the change in Total temperature at fan inlet represent of the given engine signal in one cycle\n ?\nassistant\n",
+        "prediction": "The fan inlet temperature appears to remain constant. This could indicate stable engine performance without any significant temperature fluctuations.",
+        "label": "Fan inlet temperature remains constant. Indicates stable engine operation without temperature fluctuations.",
+        "is_correct": false
+    },
+    {
+        "index": 1,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nMay I inquire as to the significance of the observed variation in the total temperature at the HPC outlet, as represented within the provided engine signal during a single cycle?\n \nassistant\n",
+        "prediction": "The HPC outlet temperature exhibits a gradual decline. This trend signifies a gradual reduction in the compressor's workload, which contributes to maintaining stable engine performance and preventing any significant temperature fluctuations.",
+        "label": "The HPC outlet temperature exhibits a gradual decline. This indicates a potential reduction in engine power or minor enhancements in cooling efficiency, both of which contribute to the maintenance of stable engine performance.",
+        "is_correct": false
+    },
+    {
+        "index": 2,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat does the change in total pressure at the fan inlet represent in the given engine signal over one cycle?\n \nassistant\n",
+        "prediction": "The fan inlet pressure appears to remain constant. This could indicate stable compressor performance, suggesting that there are no significant pressure fluctuations during the cycle.",
+        "label": "The fan inlet pressure appears to be rising slowly. This could reflect gradual power adjustments, which may contribute to stable engine operation and potentially promote optimal fuel efficiency.",
+        "is_correct": false
+    },
+    {
+        "index": 3,
+        "stage": 3,
+        "input": "system\nYou are a helpful assistant.\nuser\nGiven the time series signal , by perceiving the engine signal across 10 cycles to reflect different health states and performing temporal inference to predict the health decline trend, what is the qualitative condition of the engine? a:  Good Condition\n b: Moderate Condition\n c: Poor Condition\n d: Bad Condition\n e: Extremely Poor Condition\n\nassistant\n",
+        "prediction": "b",
+        "label": "b",
+        "is_correct": true
+    },
+    {
+        "index": 8,
+        "stage": 3,
+        "input": "system\nYou are a helpful assistant.\nuser\nGiven the time series signal , by perceiving the engine signal across 10 cycles to reflect different health states and performing temporal inference to predict the health decline trend, what is the qualitative condition of the engine? a:  Good Condition\n b: Moderate Condition\n c: Poor Condition\n d: Bad Condition\n e: Extremely Poor Condition\n\nassistant\n",
+        "prediction": "b",
+        "label": "a",
+        "is_correct": false
+    },
+    {
+        "index": 1,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nIn the context of the provided engine signal over a single cycle, what does the variation in the total temperature at the HPT outlet indicate?\n \nassistant\n",
+        "prediction": "The total temperature at the HPT outlet remains constant throughout the cycle. This stability signifies that the compressor is performing consistently without any significant temperature fluctuations, indicating reliable and consistent engine performance.",
+        "label": "The total temperature at the HPT outlet exhibits a slow decline. This gradual decrease points to either a progressive reduction in engine power output or minor enhancements in cooling efficiency, both of which contribute to maintaining stable and reliable engine performance.",
+        "is_correct": false
+    },
+    {
+        "index": 3,
+        "stage": 3,
+        "input": "system\nYou are a helpful assistant.\nuser\nGiven the time series signal , by perceiving the engine signal across 10 cycles to reflect different health states and performing temporal inference to predict the health decline trend, what is the probability range of engine failure? a: 1%-10%\n b: 10%-30%\n c: 30%-50%\n d: 50%-70%\n e: 70%-100%\n\nassistant\n",
+        "prediction": "b",
+        "label": "b",
+        "is_correct": true
+    },
+    {
+        "index": 2,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat does the change in Total temperature at LPC outlet represent of the given engine signal in one cycle?\n \nassistant\n",
+        "prediction": "The LPC outlet temperature appears to remain constant. This could indicate stable compressor performance, suggesting that the compressor is not undergoing significant temperature fluctuations during the cycle.",
+        "label": "The LPC outlet temperature appears to remain constant. This could indicate stable compressor performance, suggesting that there are no significant temperature fluctuations during the cycle.",
+        "is_correct": false
+    },
+    {
+        "index": 3,
+        "stage": 4,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat should we do with the given engine signal across 10 cycles?\n \nassistant\n",
+        "prediction": "It may be advisable to consider performing maintenance or adjusting the compressor operations to ensure稳定的air_quality and continued safe operation.",
+        "label": "It might be advisable to closely monitor the engine's condition and consider scheduling maintenance in the near future to ensure continued reliability.",
+        "is_correct": false
+    },
+    {
+        "index": 1,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nHey, can you explain what the change in Total temperature at the LPT outlet means for the engine signal we’re analyzing in this single cycle?\n \nassistant\n",
+        "prediction": "The change in Total temperature at the LPT outlet for the engine signal we're analyzing in this single cycle is represented by a decrease.",
+        "label": "Well, the LPT outlet temperature is dropping slowly over time. This indicates that there might be a gradual decrease in engine power or some minor improvements in cooling efficiency. Either way, it’s a sign that the engine is maintaining stable performance, which is a good thing!",
+        "is_correct": false
+    },
+    {
+        "index": 8,
+        "stage": 3,
+        "input": "system\nYou are a helpful assistant.\nuser\nGiven the time series signal , by perceiving the engine signal across 10 cycles to reflect different health states and performing temporal inference to predict the health decline trend, what is the probability range of engine failure? a: 1%-10%\n b: 10%-30%\n c: 30%-50%\n d: 50%-70%\n e: 70%-100%\n\nassistant\n",
+        "prediction": "b",
+        "label": "b",
+        "is_correct": true
+    },
+    {
+        "index": 7,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nIn the context of the provided engine signal, what is the precise interpretation and operational significance of the observed change in total pressure at the fan inlet over the course of a single cycle?\n \nassistant\n",
+        "prediction": "The total pressure at the fan inlet exhibits a gradual increase. This trend indicates a progressive enhancement in the compressor's power output, which contributes to the maintenance of stable engine performance.",
+        "label": "The total pressure at the fan inlet exhibits a slow and steady rise. This trend indicates the implementation of gradual power adjustments, which contribute to maintaining stable engine operation and achieving optimal fuel efficiency.",
+        "is_correct": false
+    },
+    {
+        "index": 2,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nMay I inquire as to the precise interpretation of the variation in the total temperature at the HPC outlet with regard to the engine signal that has been presented within the confines of a singular cycle?\n \nassistant\n",
+        "prediction": "The HPC outlet temperature remains unchanged. This indicates stable compressor performance, as there are no significant temperature fluctuations observed during the cycle.",
+        "label": "The total temperature at the HPC outlet remains constant. This indicates that the compressor performance is stable, with no significant temperature fluctuations observed during the cycle.",
+        "is_correct": false
+    },
+    {
+        "index": 7,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nIn the analysis of the provided engine signal, what is the precise representation and significance of the change in total temperature observed at the Low-Pressure Compressor (LPC) outlet over the course of a single operational cycle?\n \nassistant\n",
+        "prediction": "The total temperature at the LPC outlet exhibits a steady decline. This trend signifies that the compressor is performing consistently under the constraints of minor temperature fluctuations, which contributes to the stable operation of the engine.",
+        "label": "The total temperature at the LPC outlet remains constant throughout the cycle. This consistency signifies stable compressor performance, indicating the absence of temperature fluctuations and ensuring reliable operation of the compressor system.",
+        "is_correct": false
+    },
+    {
+        "index": 1,
+        "stage": 2,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat is the health status of fan of the given engine signal in one cycle?\n  a: Health\n b: Fault\n\nassistant\n",
+        "prediction": "a",
+        "label": "a",
+        "is_correct": true
+    },
+    {
+        "index": 8,
+        "stage": 4,
+        "input": "system\nYou are a helpful assistant.\nuser\nGiven the engine signal observed across 10 cycles, what is the appropriate course of action to be undertaken?\n \nassistant\n",
+        "prediction": "It is essential to closely monitor the engine's condition and perform necessary repairs or replacements as soon as possible to ensure optimal performance and prevent potential issues.",
+        "label": "It is imperative to conduct preventive maintenance and implement enhanced monitoring of key parameters to ensure optimal performance and mitigate potential risks.",
+        "is_correct": false
+    },
+    {
+        "index": 7,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nHey, could you explain what the change in Total Temperature at the HPC outlet means for this engine signal during one cycle?\n \nassistant\n",
+        "prediction": "Well, the HPC outlet temperature is dropping slowly. This indicates that the compressor is performing steadily and consistently, without any significant temperature fluctuations. This stability is crucial for maintaining the engine's performance and ensuring reliable operation.",
+        "label": "Well, the HPC outlet temperature is dropping slowly, which points to either a gradual decrease in engine power or some minor improvements in cooling. Either way, it hints that the engine is maintaining stable performance overall.",
+        "is_correct": false
+    },
+    {
+        "index": 6,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nIn the context of the provided engine signal, what is the precise interpretation and operational significance of the observed change in Total Temperature at the High-Pressure Turbine (HPT) outlet over the span of a single cycle?\n \nassistant\n",
+        "prediction": "The HPT outlet temperature exhibits a gradual increase. This trend indicates a gradual enhancement in the compressor's power output, which is consistent with the objective of maintaining stable engine performance.",
+        "label": "The HPT outlet temperature exhibits a steady and progressive rise. This trend indicates a consistent increase in the workload of the turbine, which is instrumental in sustaining balanced and efficient engine performance throughout the cycle.",
+        "is_correct": false
+    },
+    {
+        "index": 5,
+        "stage": 2,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat is the health status of LPC of the given engine signal in one cycle?\n  a: Health\n b: Fault\n\nassistant\n",
+        "prediction": "a",
+        "label": "a",
+        "is_correct": true
+    },
+    {
+        "index": 9,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nIn the context of the provided engine signal, what is the precise interpretation and operational implications of the observed change in altitude during a single cycle?\n \nassistant\n",
+        "prediction": "The altitude is maintained at a constant level throughout the cycle. This stability ensures that the engine operates efficiently and without any unnecessary adjustments, thereby maintaining optimal performance.",
+        "label": "The altitude is rising rapidly. This swift ascent places an increased workload on the engine, resulting in higher fuel consumption and elevated compressor inlet temperatures. These conditions can potentially induce stress on critical engine components, thereby impacting overall performance and reliability.",
+        "is_correct": false
+    },
+    {
+        "index": 5,
+        "stage": 2,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat is the health status of HPC of the given engine signal in one cycle?\n  a: Health\n b: Fault\n\nassistant\n",
+        "prediction": "a",
+        "label": "a",
+        "is_correct": true
+    },
+    {
+        "index": 7,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat does the change in Total temperature at HPT outlet represent of the given engine signal in one cycle?\n \nassistant\n",
+        "prediction": "The HPT outlet temperature appears to remain constant. This could indicate stable compressor performance, suggesting that there are no significant temperature fluctuations during the cycle.",
+        "label": "The HPT outlet temperature appears to be dropping slowly. This could suggest gradual reductions in engine power or possibly minor cooling improvements, which might contribute to supporting stable engine performance over time.",
+        "is_correct": false
+    },
+    {
+        "index": 5,
+        "stage": 2,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat is the health status of HPT of the given engine signal in one cycle?\n  a: Health\n b: Fault\n\nassistant\n",
+        "prediction": "a",
+        "label": "b",
+        "is_correct": false
+    },
+    {
+        "index": 6,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat does the observed change in the Total Temperature at the Low-Pressure Turbine (LPT) outlet indicate within the provided engine signal over a single cycle?\n \nassistant\n",
+        "prediction": "The LPT outlet temperature exhibits a slow and gradual increase. This trend indicates a gradual and controlled temperature rise, which supports the assertion that the compressor is performing consistently and efficiently, thereby maintaining stable engine performance.",
+        "label": "The LPT outlet temperature exhibits a gradual rise. This trend signifies the engine's incremental power adjustments, which contribute to maintaining stable operational conditions and achieving optimal fuel efficiency.",
+        "is_correct": false
+    },
+    {
+        "index": 5,
+        "stage": 2,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat is the health status of LPT of the given engine signal in one cycle?\n  a: Health\n b: Fault\n\nassistant\n",
+        "prediction": "a",
+        "label": "a",
+        "is_correct": true
+    },
+    {
+        "index": 9,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nIn the context of the provided engine signal analysis, what is the precise representation and operational implication of the observed change in Throttle Resolver Angle (TRA) during a single operational cycle?\n \nassistant\n",
+        "prediction": "The TRA is maintained at a constant level throughout the cycle. This stability ensures that the engine's power output remains consistent, contributing to a smooth and efficient operation without any significant fluctuations.",
+        "label": "The Throttle Resolver Angle exhibits a gradual and consistent decrease throughout the cycle. This pattern indicates a controlled and progressive reduction in engine power output, which facilitates smoother engine operation and contributes to the efficient conservation of fuel resources. Such a trend is indicative of a well-regulated power management strategy, ensuring both operational stability and fuel efficiency.",
+        "is_correct": false
+    },
+    {
+        "index": 7,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nIn the context of the provided engine signal over a single cycle, what does the variation in Total Temperature at the Low-Pressure Turbine (LPT) outlet signify?\n \nassistant\n",
+        "prediction": "The LPT outlet temperature exhibits a gradual increase. This trend indicates a progressive enhancement in turbine performance, as it reflects the gradual adjustment of compressor efficiency.",
+        "label": "The Total Temperature at the LPT outlet remains constant throughout the cycle. This stability indicates that the compressor is performing reliably, with no significant temperature fluctuations, ensuring consistent engine operation.",
+        "is_correct": false
+    },
+    {
+        "index": 6,
+        "stage": 2,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat is the health status of fan of the given engine signal in one cycle?\n  a: Health\n b: Fault\n\nassistant\n",
+        "prediction": "a",
+        "label": "a",
+        "is_correct": true
+    },
+    {
+        "index": 9,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat does the change in Total temperature at fan inlet represent of the given engine signal in one cycle?\n \nassistant\n",
+        "prediction": "The fan inlet temperature appears to remain constant. This could indicate stable compressor performance, suggesting that there are no significant temperature fluctuations during the cycle.",
+        "label": "The fan inlet temperature appears to remain constant. This could indicate stable engine operation, suggesting there are no significant temperature fluctuations during the cycle.",
+        "is_correct": false
+    },
+    {
+        "index": 5,
+        "stage": 2,
+        "input": "system\nYou are a helpful assistant.\nuser\nWas the timing issue in the operation of the given engine signal in one cycle caused by efficiency or flow problems?\n  a: HPT efficiency modifier\n b: LPT efficiency modifier\n c: Fan efficiency modifier\n d: HPT flow modifier\n e: LPT flow modifier\n f: Fan flow modifier\n\nassistant\n",
+        "prediction": "",
+        "label": "a",
+        "is_correct": false
+    },
+    {
+        "index": 7,
+        "stage": 2,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat is the health status of fan of the given engine signal in one cycle?\n  a: Health\n b: Fault\n\nassistant\n",
+        "prediction": "a",
+        "label": "a",
+        "is_correct": true
+    },
+    {
+        "index": 6,
+        "stage": 2,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat is the health status of LPC of the given engine signal in one cycle?\n  a: Health\n b: Fault\n\nassistant\n",
+        "prediction": "a",
+        "label": "a",
+        "is_correct": true
+    },
+    {
+        "index": 9,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nHey, can you explain what the change in total pressure at the fan inlet means for this engine signal in one cycle?\n \nassistant\n",
+        "prediction": "Well, the fan inlet pressure is increasing slowly. This indicates that the engine is making gradual adjustments to maintain stable performance, which is consistent with the concept of gradual throttle adjustments in engine operation.",
+        "label": "So, the fan inlet pressure is dropping steadily. This could mean there are controlled throttle adjustments happening, or it might indicate a gradual decline in compressor performance. Either way, the engine is maintaining its balance during this process.",
+        "is_correct": false
+    },
+    {
+        "index": 5,
+        "stage": 2,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat is the potential health state of the given engine signal in one cycle?\n  a: Operating Normally\n b: Abnormal Degradation\n c: Imminent Failure\n\nassistant\n",
+        "prediction": "c",
+        "label": "c",
+        "is_correct": true
+    },
+    {
+        "index": 7,
+        "stage": 2,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat is the health status of LPC of the given engine signal in one cycle?\n  a: Health\n b: Fault\n\nassistant\n",
+        "prediction": "a",
+        "label": "a",
+        "is_correct": true
+    },
+    {
+        "index": 6,
+        "stage": 2,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat is the health status of HPC of the given engine signal in one cycle?\n  a: Health\n b: Fault\n\nassistant\n",
+        "prediction": "a",
+        "label": "a",
+        "is_correct": true
+    },
+    {
+        "index": 9,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nHey, could you explain what the change in the total temperature at the LPC outlet means for this engine signal during one cycle?\n \nassistant\n",
+        "prediction": "The LPC outlet temperature remains stable throughout the cycle. This indicates that the engine is operating at a consistent and reliable level, with no significant temperature fluctuations affecting its performance.",
+        "label": "Well, the LPC outlet temperature is dropping slowly. This indicates that there’s either a gradual decrease in the compressor’s workload or some minor improvements in cooling. Either way, it points to the engine maintaining stable performance, which is a good sign.",
+        "is_correct": false
+    },
+    {
+        "index": 6,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat does the change in altitude represent in the given engine signal over one cycle?\n \nassistant\n",
+        "prediction": "发动机速度或功率的下降是信号中的一部分，但它并不直接反映整体性能的变动。",
+        "label": "The altitude appears to be dropping rapidly. A swift descent might reduce the engine workload, but it could also necessitate rapid adjustments to maintain stability and efficiency, potentially leading to increased wear on engine components.",
+        "is_correct": false
+    },
+    {
+        "index": 7,
+        "stage": 2,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat is the health status of HPC of the given engine signal in one cycle?\n  a: Health\n b: Fault\n\nassistant\n",
+        "prediction": "a",
+        "label": "a",
+        "is_correct": true
+    },
+    {
+        "index": 6,
+        "stage": 2,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat is the health status of HPT of the given engine signal in one cycle?\n  a: Health\n b: Fault\n\nassistant\n",
+        "prediction": "a",
+        "label": "b",
+        "is_correct": false
+    },
+    {
+        "index": 7,
+        "stage": 2,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat is the health status of HPT of the given engine signal in one cycle?\n  a: Health\n b: Fault\n\nassistant\n",
+        "prediction": "a",
+        "label": "a",
+        "is_correct": true
+    },
+    {
+        "index": 6,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nIn the context of the engine signal provided, what is the precise interpretation and operational significance of the observed change in throttle resolver angle during a single cycle?\n \nassistant\n",
+        "prediction": "Throttle resolver angle exhibits a gradual decrease. This trend indicates a gradual reduction in engine power output, which is consistent with the engine's ability to maintain stable performance and optimize fuel efficiency over time.",
+        "label": "The throttle resolver angle exhibits a rapid increase. This phenomenon may signify a sudden surge in engine thrust demand, potentially imposing stress on throttle mechanisms and adversely affecting fuel efficiency.",
+        "is_correct": false
+    },
+    {
+        "index": 9,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nIn the context of the provided engine signal over a single cycle, what does the variation in Total Temperature at the High-Pressure Compressor (HPC) outlet signify?\n \nassistant\n",
+        "prediction": "The HPC outlet temperature remains constant, indicating stable compressor performance. This stability suggests that the compressor is operating efficiently and without any significant temperature fluctuations, which is beneficial for optimal engine performance and longevity.",
+        "label": "The Total Temperature at the HPC outlet remains constant. This consistency indicates stable compressor performance, ensuring there are no significant temperature fluctuations during operation.",
+        "is_correct": false
+    },
+    {
+        "index": 6,
+        "stage": 2,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat is the health status of LPT of the given engine signal in one cycle?\n  a: Health\n b: Fault\n\nassistant\n",
+        "prediction": "a",
+        "label": "a",
+        "is_correct": true
+    },
+    {
+        "index": 6,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nIn the context of the provided engine signal over a single cycle, what does the variation in total temperature at the fan inlet signify?\n \nassistant\n",
+        "prediction": "The fan inlet temperature remains consistent throughout the cycle. This stability indicates that the engine is operating efficiently, with no significant temperature fluctuations, thereby maintaining optimal performance and reliability.",
+        "label": "The total temperature at the fan inlet remains constant. This stability indicates that the engine is operating under consistent conditions without any significant temperature fluctuations, ensuring reliable performance.",
+        "is_correct": false
+    },
+    {
+        "index": 7,
+        "stage": 2,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat is the health status of LPT of the given engine signal in one cycle?\n  a: Health\n b: Fault\n\nassistant\n",
+        "prediction": "a",
+        "label": "a",
+        "is_correct": true
+    },
+    {
+        "index": 9,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nRegarding the engine signal over one operational cycle, what does the variation in Total Temperature at the High-Pressure Turbine (HPT) outlet signify?\n \nassistant\n",
+        "prediction": "The HPT outlet temperature exhibits a gradual increase. This trend indicates a gradual increase in engine power, which is consistent with the operational requirements and ensures stable performance throughout the cycle.",
+        "label": "The Total Temperature at the HPT outlet remains constant. This stability reflects consistent turbine performance, indicating the absence of significant temperature fluctuations during the cycle.",
+        "is_correct": false
+    },
+    {
+        "index": 6,
+        "stage": 2,
+        "input": "system\nYou are a helpful assistant.\nuser\nWas the timing issue in the operation of the given engine signal in one cycle caused by efficiency or flow problems?\n  a: HPT efficiency modifier\n b: LPT efficiency modifier\n c: Fan efficiency modifier\n d: HPT flow modifier\n e: LPT flow modifier\n f: Fan flow modifier\n\nassistant\n",
+        "prediction": "",
+        "label": "a",
+        "is_correct": false
+    },
+    {
+        "index": 6,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nIn the context of the provided engine signal over a single cycle, what does the variation in total pressure at the fan inlet signify?\n \nassistant\n",
+        "prediction": "The total pressure at the fan inlet remains constant throughout the cycle. This stability indicates that the engine is operating efficiently, with no significant pressure fluctuations, which is a hallmark of a smooth and reliable operation.",
+        "label": "The total pressure at the fan inlet exhibits a slow and steady increase. This gradual rise indicates incremental power adjustments, which contribute to maintaining stable engine performance while ensuring optimal fuel efficiency.",
+        "is_correct": false
+    },
+    {
+        "index": 7,
+        "stage": 2,
+        "input": "system\nYou are a helpful assistant.\nuser\nWas the timing issue in the operation of the given engine signal in one cycle caused by efficiency or flow problems?\n  a: HPT efficiency modifier\n b: LPT efficiency modifier\n c: Fan efficiency modifier\n d: HPT flow modifier\n e: LPT flow modifier\n f: Fan flow modifier\n\nassistant\n",
+        "prediction": "",
+        "label": "a",
+        "is_correct": false
+    },
+    {
+        "index": 9,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat does the change in Total temperature at the LPT outlet represent in the given engine signal across one cycle?\n \nassistant\n",
+        "prediction": "The LPT outlet temperature appears to be rising slowly. This could indicate a gradual increase in engine power or possibly a minor temperature adjustment, which may contribute to maintaining stable performance over time.",
+        "label": "The LPT outlet temperature appears to be dropping slowly. This could suggest gradual reductions in engine power or minor improvements in cooling efficiency, which may contribute to maintaining stable engine performance over time.",
+        "is_correct": false
+    },
+    {
+        "index": 6,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nSo, what does the change in Total Temperature at the LPC outlet actually mean for the engine signal we're analyzing in this single cycle?\n \nassistant\n",
+        "prediction": "Well, the LPC outlet temperature stays steady throughout the cycle. This indicates that the compressor is performing consistently, which is a key indicator of stable engine performance.",
+        "label": "Well, the LPC outlet temperature is increasing at a slow and steady pace. This indicates that the compressor workload is being adjusted gradually, which helps maintain stable and smooth engine operation overall.",
+        "is_correct": false
+    },
+    {
+        "index": 6,
+        "stage": 2,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat is the potential health state of the given engine signal in one cycle?\n  a: Operating Normally\n b: Abnormal Degradation\n c: Imminent Failure\n\nassistant\n",
+        "prediction": "c",
+        "label": "b",
+        "is_correct": false
+    },
+    {
+        "index": 6,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nIn the context of the provided engine signal, what does the observed change in the total temperature at the High-Pressure Compressor (HPC) outlet signify over the course of a single operational cycle?\n \nassistant\n",
+        "prediction": "The HPC outlet temperature exhibits a gradual increase. This trend indicates a gradual enhancement in the compressor's workload, which is consistent with the engine's intended operational conditions.",
+        "label": "The temperature at the HPC outlet exhibits a gradual increase. This trend indicates a controlled and progressive adjustment in engine power output, which contributes to maintaining stable engine operation and achieving optimal fuel efficiency.",
+        "is_correct": false
+    },
+    {
+        "index": 7,
+        "stage": 2,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat is the potential health state of the given engine signal in one cycle?\n  a: Operating Normally\n b: Abnormal Degradation\n c: Imminent Failure\n\nassistant\n",
+        "prediction": "c",
+        "label": "a",
+        "is_correct": false
+    },
+    {
+        "index": 7,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nMay I inquire as to the specific interpretation of the observed change in altitude with respect to the provided engine signal over the course of a single cycle?\n \nassistant\n",
+        "prediction": "The altitude appears to be undergoing a gradual decrease. This trend suggests that the engine is performing optimally, thereby maintaining a stable and efficient operation.",
+        "label": "The altitude is dropping rapidly. A swift descent reduces the workload on the engine; however, it may necessitate rapid adjustments to maintain stability and operational efficiency. This could potentially lead to increased wear on engine components over time.",
+        "is_correct": false
+    },
+    {
+        "index": 9,
+        "stage": 2,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat is the health status of fan of the given engine signal in one cycle?\n  a: Health\n b: Fault\n\nassistant\n",
+        "prediction": "a",
+        "label": "b",
+        "is_correct": false
+    },
+    {
+        "index": 9,
+        "stage": 2,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat is the health status of LPC of the given engine signal in one cycle?\n  a: Health\n b: Fault\n\nassistant\n",
+        "prediction": "a",
+        "label": "b",
+        "is_correct": false
+    },
+    {
+        "index": 7,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat does the change in Throttle resolver angle represent of the given engine signal in one cycle?\n \nassistant\n",
+        "prediction": "The Throttle resolver angle appears to be increasing slowly. This could indicate a gradual adjustment of engine power, which may contribute to maintaining optimal performance over time.",
+        "label": "The Throttle Resolver Angle appears to be decreasing steadily. This trend may represent a controlled reduction in engine power, potentially maintaining a balance between thrust and fuel efficiency.",
+        "is_correct": false
+    },
+    {
+        "index": 9,
+        "stage": 2,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat is the health status of HPC of the given engine signal in one cycle?\n  a: Health\n b: Fault\n\nassistant\n",
+        "prediction": "a",
+        "label": "b",
+        "is_correct": false
+    },
+    {
+        "index": 7,
+        "stage": 1,
+        "input": "system\nYou are a helpful assistant.\nuser\nHey, could you explain what the change in the total temperature at the fan inlet means for the engine signal we're analyzing in this one cycle?\n \nassistant\n",
+        "prediction": "Well, the fan inlet temperature stays steady throughout the cycle. This indicates that the engine is operating consistently without any temperature fluctuations, which is a good sign of reliability.",
+        "label": "Well, the fan inlet temperature stays the same throughout the cycle. This shows that the engine is running smoothly without any temperature ups and downs, which is a good sign of stable operation.",
+        "is_correct": false
+    },
+    {
+        "index": 9,
+        "stage": 2,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat is the health status of HPT of the given engine signal in one cycle?\n  a: Health\n b: Fault\n\nassistant\n",
+        "prediction": "a",
+        "label": "b",
+        "is_correct": false
+    },
+    {
+        "index": 9,
+        "stage": 2,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat is the health status of LPT of the given engine signal in one cycle?\n  a: Health\n b: Fault\n\nassistant\n",
+        "prediction": "a",
+        "label": "b",
+        "is_correct": false
+    },
+    {
+        "index": 9,
+        "stage": 2,
+        "input": "system\nYou are a helpful assistant.\nuser\nWas the timing issue in the operation of the given engine signal in one cycle caused by efficiency or flow problems?\n  a: HPT efficiency modifier\n b: LPT efficiency modifier\n c: Fan efficiency modifier\n d: HPT flow modifier\n e: LPT flow modifier\n f: Fan flow modifier\n\nassistant\n",
+        "prediction": "",
+        "label": "a, b, c, d, e, f",
+        "is_correct": false
+    },
+    {
+        "index": 9,
+        "stage": 2,
+        "input": "system\nYou are a helpful assistant.\nuser\nWhat is the potential health state of the given engine signal in one cycle?\n  a: Operating Normally\n b: Abnormal Degradation\n c: Imminent Failure\n\nassistant\n",
+        "prediction": "c",
+        "label": "c",
+        "is_correct": true
+    }
+]

@@ -12,6 +12,8 @@ from timm.layers.helpers import to_2tuple
 from transformers.modeling_outputs import CausalLMOutputWithPast
 from utils.position_coding import LearnablePositionalEmbedding, SinusoidalPositionalEncoding,RotaryPositionalEncoding
 from models.layers.attention import InstructTimeAttention
+
+
 class SeqCrossAttention(nn.Module):
     def __init__(
             self,
@@ -71,7 +73,6 @@ class SeqCrossAttention(nn.Module):
         return x
     
 class SeqAttBlock(nn.Module):
-
     def __init__(
             self,
             dim,
@@ -112,7 +113,6 @@ class SeqAttBlock(nn.Module):
         return x
 
 class VarCrossAttention(nn.Module):
-
     def __init__(
             self,
             dim,
@@ -171,7 +171,6 @@ class VarCrossAttention(nn.Module):
         return x
 
 class VarAttBlock(nn.Module):
-
     def __init__(
             self,
             dim,
@@ -210,7 +209,6 @@ class VarAttBlock(nn.Module):
         return x
 
 class SeqAttention(nn.Module):
-
     def __init__(
             self,
             dim,

@@ -302,7 +302,7 @@ class TsQaDataset(Dataset):
                 q_input_ids = self._validate_token_ids(q_input_ids, f"infer_q_sample_{idx}")
                 a_input_ids = self._validate_token_ids(a_input_ids, f"infer_a_sample_{idx}")
 
-                return {
+                returned_dict = {
                     'form': sample['form'],
                     'stage': sample['stage'],
                     'query_ids': query_ids,  # Only contains the original question text
@@ -311,6 +311,19 @@ class TsQaDataset(Dataset):
                     'ts_values': torch.tensor(ts, dtype=torch.float),
                     'index': sample['line_num']
                 }
+                
+                # json_dict = {
+                #     k: (v.detach().cpu().tolist() if torch.is_tensor(v) else v)
+                #     for k, v in returned_dict.items()
+                # }
+                
+                # with open("samples_json.jsonl", "a") as f:
+                #     f.write(json.dumps(sample) + "\n")
+                    
+                # with open("ts_json.jsonl", "a") as f:
+                #     f.write(json.dumps(json_dict) + "\n")
+                
+                return returned_dict
                 
         except Exception as e:
             if accelerator.is_main_process:
