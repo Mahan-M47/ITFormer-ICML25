@@ -12,9 +12,15 @@ import random
 import numpy as np
 import torch
 from transformers import AutoTokenizer, AutoProcessor
-from dataset.dataset import TsQaDataset, DataCollator
+
+# from dataset.dataset import TsQaDataset 
+# from dataset.dataset import DataCollator
 
 from dataset.dataset_custom import CustomTsQaDataset
+from dataset.dataset import DataCollator
+
+from dataset.dataset_tsqa import DatasetTSQA
+from dataset.dataset_tsqa import DataCollator
 
 from models.TimeLanguageModel import TLM
 from datetime import datetime
@@ -102,7 +108,6 @@ def main_inference(args):
     )
     
     # Load model - let from_pretrained handle configuration loading
-    from models.TimeLanguageModel import TLM
     model = TLM.from_pretrained(args.model_checkpoint, config=tlm_config)
     
     # Print model parameter statistics only in the main process
@@ -139,12 +144,13 @@ def main_inference(args):
         model.llm_model.resize_token_embeddings(len(tokenizer))
     tokenizer.padding_side = 'left'
     
-    # # Simple config for dataset
+    # Simple config for dataset
     # class SimpleConfig:
     #     def __init__(self, **kwargs):
     #         for key, value in kwargs.items():
     #             setattr(self, key, value)
     # tlmconfig = SimpleConfig(ts_pad_num=args.prefix_num)
+    
     # test_dataset = TsQaDataset(
     #     args.ts_path_test,
     #     args.qa_path_test,
@@ -153,7 +159,9 @@ def main_inference(args):
     #     tlmconfig
     # )
     
-    test_dataset = CustomTsQaDataset(args.sample_data)
+    # test_dataset = CustomTsQaDataset(args.sample_data)
+    
+    test_dataset = DatasetTSQA('dataset/datasets/TSQA24.csv', tokenizer, args.prefix_num)
     
     data_collator = DataCollator(tokenizer=tokenizer)
     test_loader = DataLoader(

@@ -444,7 +444,13 @@ class Patchfy(nn.Module):
         self.stride = stride
         assert self.patch_len == self.stride, "non-overlap"
     def forward(self, x):
-        x = x.transpose(1, 2)
+        # print(len(x))
+        # print(len(x[0]), end='\n\n')
+        
+        # x = x.transpose(1, 2)  # Uncomment if using original data
+        
+        # print(len(x))
+        # print(len(x[0]), end='\n\n')
         x = x.unfold(dimension=-1, size=self.patch_len, step=self.stride)
         # x = x.transpose(1, 2)
         return x

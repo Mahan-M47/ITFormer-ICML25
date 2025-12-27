@@ -148,8 +148,11 @@ class TLM(PreTrainedModel, GenerationMixin):
                 self.n_heads = 8
                 self.e_layers = 4
                 self.patch_len = 60
+                # self.patch_len = 8
                 self.stride = 60
+                # self.stride = 8
                 self.input_len = 600
+                # self.input_len = 64
                 self.dropout = 0.1
                 self.tt_d_model = 896
                 self.tt_n_heads = 16
